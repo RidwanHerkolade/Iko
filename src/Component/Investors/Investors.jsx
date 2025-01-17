@@ -1,5 +1,4 @@
 "use client";
-// import { useEffect, useState } from "react";
 import style from "./investors.module.css";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Pagination,} from "swiper/modules";
@@ -73,29 +72,6 @@ export const investorData = [
 ];
 
 const Investors = () => {
-  // const [currentIndex, setCurrentIndex] = useState(0);
-  // const numberOfDataOnPage = 3;
-  // const autoSlide = 3000;
-  // // Total number of pages
-  // const totalNumberOfPages = Math.ceil(
-  //   investorData.length / numberOfDataOnPage
-  // );
-  // // Data for the current page
-  // const currentPageData = investorData.slice(
-  //   currentIndex * numberOfDataOnPage,
-  //   (currentIndex + 1) * numberOfDataOnPage
-  // );
-  // Auto-slide logic
-  // useEffect(() => {
-  //   const interval = setInterval(() => {
-  //     setCurrentIndex((prevIndex) => (prevIndex + 1) % totalNumberOfPages);
-  //   }, autoSlide);
-
-  //   return () => clearInterval(interval);
-  // }, [totalNumberOfPages]);
-  // const handlePaginationClick = (index) => {
-  //   setCurrentIndex(index);
-  // };
   return (
     <section className={style.section}>
       <h1>Our Partners</h1>
@@ -153,18 +129,6 @@ const Investors = () => {
           ))}
         </Swiper>
       </div>
-      {/* Pagination Buttons */}
-      {/* <div className={style.pagination}>
-        {Array.from({ length: totalNumberOfPages }).map((_, index) => (
-          <button
-            key={index}
-            className={`${style.pageButton} ${
-              currentIndex === index ? style.activePage : ""
-            }`}
-            onClick={() => handlePaginationClick(index)}
-          ></button>
-        ))}
-      </div> */}
     </section>
   );
 };

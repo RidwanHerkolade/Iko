@@ -74,5 +74,4 @@ const Mission = () => {
     </section>
   );
 };
-
 export default Mission;
