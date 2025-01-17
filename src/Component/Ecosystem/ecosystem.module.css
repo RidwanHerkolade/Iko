@@ -1,0 +1,95 @@
+.section {
+    background-color: var(--color-bt);
+    padding: 4rem 2rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.section h1 {
+    color: var(--color-white);
+    font-weight: 800;
+    font-size: var(--font-new);
+    font-family: var(--font-family);
+    width: 40%;
+    text-align: center;
+}
+.grids {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+    margin: 4rem 0rem;
+    width: 100%;
+}
+.eco {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid var(--color-borders);
+    background-color: var(--color-ico);
+    border-radius: 2rem;
+    padding: 3rem;
+}
+.icon {
+    background: var(--color-roadGradient);
+    border: 1px solid var(--color-borders);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1.5rem;
+    border-radius: 3rem;
+}
+.btn {
+    margin-top: 3rem;
+    background-color: var(--color-white);
+    padding: 0.8rem 3rem;
+    color: var(--color-bt);
+    text-align: center;
+    width: 100%;
+    font-family: var(--font-familys);
+    font-size: var(--font-small);
+    cursor: pointer;
+    font-weight: 600;
+    border-radius: 2rem;
+}
+.btn:hover {
+    background: var(--color-btnGradient);
+    color: var(--color-white);
+
+}
+@media (min-width: 280px) and (max-width: 480px) {
+    .grids {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .section h1 {
+        font-size: var(--font-now);
+        font-family: var(--font-family);
+        width: 100%;
+        text-align: center;
+    }
+    .eco {
+        margin: 0.5rem 0rem;
+    }
+}
+@media (min-width: 481px) and (max-width: 767px) {
+    .grids {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .eco {
+        margin: 0.5rem 0rem;
+    }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+    .section h1 {
+        width: 70%;
+        text-align: center;
+    }
+    .grids {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+    }
+    .eco {
+        margin: 0.5rem 0rem;
+    }
+}

@@ -1,0 +1,198 @@
+.divs {
+    background: var(--color-invGradient) !important;
+    padding: 0rem 2rem;
+    padding-bottom: 2rem;
+}
+.div {
+    display: flex;
+    gap: 3rem;
+}
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5rem;
+    margin: 2rem 0rem;
+}
+.div_con h1{
+    font-size: var(--font-folds);
+    font-family: var(--font-family) !important;
+    color: var(--color-white);
+    font-weight: 600;
+} 
+.div_con span{
+    font-size: var(--font-logo);
+    font-family: var(--font-family);
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    color: var(--color-dots);
+} 
+.grid_cons h3 {
+    font-weight: 600;
+    font-size: var(--font-logos);
+    color: var(--color-white);
+    font-family: var(--font-family);
+}
+.grid_cons span {
+    color: var(--color-white);
+    font-weight: 600;
+    font-size: var(--font-logo);
+    font-family: var(--font-family);
+}
+.slides {
+    margin: 1.5rem 0rem
+}
+.grid_con {
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+}
+.grid_cons {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.platform{
+    border: 1px solid var(--color-borders);
+    background-color: var(--color-ico) !important;
+    padding: 2rem 2rem;
+    border-radius: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.platfms {
+    display: flex;
+    width: 100%;
+    gap: 3rem;
+}
+.platform{
+    padding: 2rem 2rem;
+    border-radius: 1rem
+}
+.icons {
+    width: 100%;
+    padding: 1rem;
+    border-radius: 3rem; 
+    display: flex;
+    align-items: center;
+    background-color: var(--color-pink);
+}
+.imgss h3 {
+   font-family: var(--font-family);
+   width: 80%;
+   letter-spacing: 0.05rem;
+   line-height: 2rem;
+   font-size:  var(--font-smalleys);
+   font-weight: 600;
+}
+.prce {
+    font-size: var(--font-logo);
+    color: var(--color-dots);
+    line-height: 2rem;
+    font-family: var(--font-familys);
+}
+@media (min-width: 280px) and (max-width: 480px) {
+    .divs {
+        padding: 2rem 1rem;
+        gap: 2rem;
+    }
+    .div {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    .div_con {
+        margin: 1rem 0rem;
+    }
+    .div_con h1{
+        text-align: center;
+        font-size: var(--font-logos);
+        line-height: 2rem;
+        font-family: var(--font-family) !important;
+        color: var(--color-white);
+    } 
+    .platfms {
+        gap: 2rem;
+    }
+    .platform 
+    {
+        padding: 2rem 1rem;
+    }
+
+    .grid {
+        grid-template-columns: repeat(1, 1fr);
+        margin: 2rem 0rem;
+    }
+    .imgss h3 {
+        width: 100%;
+     }
+}
+@media (min-width: 481px) and (max-width: 767px) {
+    .divs {
+        padding: 2rem 1rem;
+        gap: 2rem;
+    }
+    .div {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    .div_con {
+        margin: 1rem 0rem;
+    }
+    .div_con h1{
+        text-align: center;
+        line-height: 2rem;
+        font-size: var(--font-logos);
+        font-family: var(--font-family) !important;
+        color: var(--color-white);
+    } 
+    .grid {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 5rem;
+        margin: 2rem 0rem;
+    }
+}
+@media (min-width: 768px) and (max-width: 1000px) {
+    .divs {
+        padding: 2rem 2rem;
+        gap: 2rem;
+    }
+    .div {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    .div_con {
+        margin: 1rem 0rem;
+    }
+    .div_con h1{
+        text-align: center;
+        font-size: var(--font-folds);
+        line-height: 2rem;
+    } 
+    .div_con span {
+        font-size: var(--font-fold);
+    }
+    .platfms {
+        gap: 2rem;
+    }
+    .platform 
+    {
+        padding: 4rem 1rem;
+    }
+
+    .grid {
+        grid-template-columns: repeat(1, 1fr);
+        margin: 2rem 0rem;
+    }
+    .imgss h3 {
+        width: 100%;
+     }
+}
+
+

@@ -1,0 +1,124 @@
+.submit {
+    background: var(--color-summitGradient);
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+    flex-direction: column;
+    align-items: center ;
+}
+.submit h1 {
+    color: var(--color-white);
+    font-size: var(--font-new);
+    font-weight: 800;
+    font-family: var(--font-family);
+}
+.summitImg {
+    position: relative;
+    width: 100%;
+    height: 10rem;
+}
+.summitImg img{
+    width: 100%;
+    height: 100%;
+    border-radius: 1rem;
+}
+.summit h2 {
+    color: var(--color-white);
+    font-size: var(--font-folds);
+    margin: 1.5rem 0rem;
+    font-weight: 600;
+    font-family: var(--font-family);
+}
+
+.summitgrid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+    margin: 4rem 0rem;
+    width: 100%;
+    position: relative;
+}
+.location {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    font-family: var(--font-family);
+    font-size: var(--font-logos);
+    margin: 0.8rem 0rem;
+}
+.location span {
+    text-transform: capitalize;
+    display: flex;
+    align-items: center;
+    font-size: var(--font-logo);
+    font-weight: 500;
+}
+.icon {
+    font-size: var(--font-logos) !important;
+    color: var(--color-pink);
+}
+.btn {
+    color: var(--color-bt);
+    background: var(--color-white);
+    font-size: var(--font-logo);
+    padding: 0.6rem 4rem;
+    text-align: center;
+    font-weight: 600;
+    border-radius: 1.2rem;
+    text-transform: uppercase;
+    font-family: var(--font-familys);
+    cursor: pointer;
+}
+.button {
+    display: flex;
+    justify-content: flex-start;
+    margin: 1rem 0rem;
+}
+.btn:hover {
+    background: var(--color-btnGradient);
+}
+
+@media (min-width: 280px) and (max-width: 480px) {
+    .submit {
+        padding: 2rem 1rem;
+    }
+    .summitImg {
+        height: 15rem;
+    }
+    .summitgrid {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 2rem;
+        margin: 4rem 0rem;
+    }
+
+}
+@media (min-width: 481px) and (max-width: 767px) {
+    .submit {
+        padding: 2rem 1rem;
+    }
+    .summitImg {
+        height: 15rem;
+    }
+    .summitgrid {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 2rem;
+        margin: 4rem 0rem;
+    }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+    .submit {
+        padding: 2rem 2rem;
+    }
+    .summitgrid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .summitImg {
+        height: 18rem;
+    }
+    .location span {
+        font-size: var(--font-fold);
+    }
+
+}

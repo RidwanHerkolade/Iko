@@ -1,0 +1,83 @@
+.divs {
+    background-color: var(--color-bt);
+    padding: 0rem 2rem;
+    width: 100% !important;
+}
+.div {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    width: 100%;
+    gap: 2rem;
+    align-items: center;
+    padding-bottom: 3rem;
+}
+.grid {
+    display: flex;
+    justify-content: center;
+    background-color: var(--color-icos);
+    align-items: center;
+    padding: 3.5rem 2rem;
+    border-radius: 1.5rem;
+    flex-direction: column;
+}
+.icon {
+    border: 1px solid var(--color-borders);
+    display: flex;
+    padding: 1rem;
+    border-radius: 2rem;
+    font-size: var(--font-logo) !important;
+    align-items: center;
+}
+.grid h1 {
+    color: var(--color-white);
+    font-family: var(--font-family);
+    font-size: var(--font-fold);
+    font-weight: 700;
+    margin: 0.7rem 0rem;
+}
+.contact {
+    display: flex;
+    flex-direction: column;
+    margin: 0.7rem 0rem;
+    text-align: center;
+}
+.contact small {
+    font-size: var(--font-smalley);
+    font-family: var(--font-familys);
+    color: var(--color-dot);
+    line-height: 1.5rem;
+    cursor: pointer;
+}
+.contact small:hover {
+    color: var(--color-purple);
+}
+@media (min-width: 280px) and (max-width: 480px) {
+    .divs {
+        padding: 0rem 1rem;
+    }
+    .div {
+        grid-template-columns: repeat(1, 1fr);
+        padding-bottom: 3rem;
+    }
+    
+}
+@media (min-width: 481px) and (max-width: 767px) {
+    .divs {
+        padding: 0rem 1rem;
+    }
+    .div {
+        grid-template-columns: repeat(1, 1fr);
+        padding-bottom: 3rem;
+    }
+
+
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+    .divs {
+        padding: 0rem 2rem;
+    }
+    .div {
+        grid-template-columns: repeat(2, 1fr);
+        padding-bottom: 3rem;
+    }
+}

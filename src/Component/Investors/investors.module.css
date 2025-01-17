@@ -1,0 +1,146 @@
+.section {
+    padding: 2rem 4rem;
+    background: var(--color-ico);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.section h1 {
+    color: var(--color-white);
+    display: flex;
+    justify-content: center;
+    margin: 2rem 0rem;
+    font-weight: 800;
+    font-size: var(--font-news);
+    font-family: var(--font-familys);
+}
+.wrapper {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+}
+.divs {
+    display: flex;
+    gap: 3rem;
+    margin: 3rem 0rem;
+    width: 100%;
+}
+.grid {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: var(--color-invGradient);
+    border-radius: 2rem;
+    padding: 3rem;
+}
+.grid:hover {
+    background: var(--color-hoverGradient);
+}
+.grid:hover .content {
+    color: var(--color-white) !important;
+
+}
+.title span {
+    color: var(--color-white);
+    font-weight: 600;
+    font-size: var(--font-folds);
+    font-family: var(--font-familys);
+    margin: 1rem 0rem;
+}
+.content {
+    color: var(--color-dots);
+    font-size: var(--font-logos);
+    font-family: var(--font-familys);
+    line-height: 1.5rem;
+    text-align: center;
+    font-weight: 500;
+    margin: 1rem 0rem;
+}
+.btn {
+    color: var(--color-ico);
+    background-color: var(--color-white);
+    font-weight: 700;
+    font-size: var(--font-logo);
+    font-family: var(--font-familys);
+    margin: 1.5rem 0rem;
+    padding: 0.8rem 2.5rem;
+    border-radius: 3rem;
+}
+.btn:hover {
+    background: var(--color-btnGradient);
+    cursor: pointer;
+}
+
+/* Add these styles to your investors.module.css */
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.3rem;
+    margin: 1rem 0rem;
+  }
+  
+  .pageButton {
+    background: var(--color-dot);
+    border: none;
+    width: 0.4rem;
+    height: 0.4rem;
+    display: flex;
+    align-items: center;
+    outline: none;
+    border-radius: 0.6rem;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .pageButton:hover {
+    background-color: #eee;
+  }
+  
+  .activePage {
+    background-color: var(--color-pink); 
+    width: 0.6rem;
+    height: 0.6rem;
+  }
+  
+  .pageButton:focus {
+    outline: none;
+  }
+
+  @media (min-width: 280px) and (max-width: 480px) {
+    .divs {
+        flex-direction: column;
+        gap: 3rem;
+    }
+    .section {
+        padding: 2rem 1rem;
+    }
+    .section h1 {
+        color: var(--color-white);
+        font-size: var(--font-new);
+    }
+    .grid {
+        display: flex;
+        border-radius: 2rem;
+    }
+
+  }
+  @media (min-width: 481px) and (max-width: 767px) {
+    .divs {
+        flex-direction: column;
+        gap: 3rem;
+    }
+    .section h1 {
+        color: var(--color-white);
+        font-size: var(--font-new);
+    }
+
+  }
+  @media (min-width: 768px) and (max-width: 767px) {
+
+  }
+  

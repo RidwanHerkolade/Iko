@@ -1,0 +1,144 @@
+.login {
+    background-color: var(--color-bt);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-bottom: 3rem;
+    align-items: center;
+
+}
+.login h1 {
+    color: var(--color-white);
+    font-size: var(--font-folds);
+    font-family: var(--font-family);
+    font-weight: 700;
+}
+.login p {
+    color: var(--color-dots);
+    font-family: var(--font-familys);
+    line-height: 2rem;
+}
+.js {
+    color: var(--color-purple);
+}
+.forms {
+    display: flex;
+    padding: 4rem 3rem;
+    width: 35%;
+    border-radius: 0.5rem;
+    background-color: var(--color-icos);
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.forms form {
+    width: 100%;
+    margin: 1rem 0rem;
+}
+.input {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem 0rem;
+}
+.input label {
+    color: var(--color-dots);
+    font-size: var(--font-logos);
+    text-transform: capitalize;
+    font-family: var(--font-familys);
+}
+.inputs {
+    width: 100%;
+    margin: 0.5rem 0rem;
+}
+.inputs input {
+    width: 100%;
+    border: none;
+    background: var(--color-forms);
+    color: var(--color-dots);
+    outline: none;
+    padding: 0.7rem 0.7rem;
+    border-radius: 0.4rem;
+}
+.inputs input::placeholder{
+    font-size: var(--font-logo);
+    font-family: var(--font-familys);
+}
+.inpu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0.2rem 0rem;
+}
+.rememberMe {
+    display: flex;
+    align-items: center !important;
+    gap: 0.5rem;
+}
+.rememberMe span {
+    color: var(--color-dots);
+    font-family: var(--font-familys);
+    text-transform: capitalize;
+}
+.span {
+    color: var(--color-dots);
+    font-family: var(--font-familys);
+    color: var(--color-purple);
+}
+.btns {
+    border-radius: 2rem;
+    display: flex;
+    align-items: center;
+    font-family: var(--font-familys);
+    border: none;
+    outline: none;
+    font-weight: 700;
+    background-color: var(--color-white);
+    cursor: pointer;
+    color: var(--color-bt);
+    font-size: var(--font-small);
+    justify-content: center;
+    gap: 2rem;
+    text-align: center;
+    padding: 0.7rem 0rem;
+}
+.btns:hover {
+    background-color: var(--color-purple);
+}
+.icon {
+    font-size: var(--font-small) !important;
+}
+@media (min-width: 280px) and (max-width: 480px) {
+    .forms {
+        padding: 4rem 2rem;
+        width: 100%;
+    }
+    .login p {
+        text-align: center;
+        margin: 0.5rem 0rem;
+        line-height: 1.5rem;
+    }
+}
+@media (min-width: 481px) and (max-width: 767px) {
+    .forms {
+        padding: 4rem 2rem;
+        width: 100%;
+    }
+    .login p {
+        text-align: center;
+        margin: 0.5rem 0rem;
+        line-height: 1.5rem;
+    }
+
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+    .forms {
+        padding: 4rem 3rem;
+        width: 90%;
+    }
+    .login p {
+        text-align: center;
+        margin: 0.5rem 0rem;
+        line-height: 1.5rem;
+    }
+
+}
